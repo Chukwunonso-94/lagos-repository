@@ -1,2 +1,2 @@
-# abuja-repository
-an introduction to the city of abuja
+# Lagos-repository
+an introduction to the city of lagos
