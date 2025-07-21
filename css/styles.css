@@ -1,88 +1,177 @@
-/* styles.css for Lagos Project by Chukwuifeka Nonso John */
+/* Chukwuifeka Nonso John | 9039950 */
+/* Main CSS File for Assignment 2 */
 
+/* Root HTML Element */
+html {
+  font: italic small-caps bold 20px/1.5 'Arial', sans-serif; /* Base font with all 6 font properties */
+}
+
+/* Body Styling */
 body {
-    font-family: 'Rubik Mono One', sans-serif;
-    background-color: #111;
-    color: #eee;
-    margin: 0;
-    padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 0.2rem solid #ccc;
+  background-color: #fdfdfd;
 }
 
+/* Layout using Floats */
+main {
+  float: left;
+  width: 70%;
+  padding: 1.5rem;
+}
+aside {
+  float: left;
+  width: 30%;
+  padding: 1.5rem;
+}
+footer {
+  clear: both;
+}
+
+/* Header and Footer */
 header, footer {
-    background-color: #004d00;
-    color: white;
-    text-align: center;
-    padding: 1em;
+  background: linear-gradient(to right, #0066cc, #00ccff);
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+footer p {
+  font-size: 0.8rem;
 }
 
-h1, h2 {
-    color: #00ff00;
+/* Section Headings */
+section h2 {
+  font-variant: small-caps;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  color: darkblue;
+  text-align: center;
 }
 
-section {
-    padding: 1em;
-    margin: 1em;
-    border: 1px solid #333;
-    background-color: #1a1a1a;
+/* Blockquote Styling */
+blockquote {
+  font-style: italic;
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-left: 0.5rem solid #ccc;
+  width: 80%;
+  margin: 2rem auto;
+  box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
 }
 
-.images img {
-    width: 30%;
-    margin: 5px;
-    transition: transform 0.3s;
+/* Figure, Figcaption, and Image */
+figure {
+  border: 0.2rem solid #ccc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+}
+img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: 0.2rem solid #999;
+  border-radius: 1rem;
+}
+figcaption {
+  font-variant: small-caps;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
-.images img:hover {
-    transform: scale(1.1);
+/* iFrame */
+iframe {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+  border: 0.2rem solid #999;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Quote Section */
+section.quote {
+  border: 0.2rem dashed #999;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  width: 85%;
+  font-family: 'Courier New', monospace;
+  font-style: italic;
+  color: #444;
+  padding: 1rem;
+  margin: 2rem auto;
 }
 
-th, td {
-    padding: 0.7em;
-    border: 1px solid #555;
+/* Lists and Links */
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea, select {
-    padding: 0.5em;
-    margin-top: 0.3em;
-    margin-bottom: 1em;
-    border-radius: 5px;
-    border: none;
-    font-family: inherit;
-}
-
-label {
-    font-weight: bold;
-    color: #00ff00;
-}
-
-.submit-btn {
-    background-color: #00cc66;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #00994d;
-}
-
 a {
-    color: #00ccff;
-    text-decoration: none;
+  text-decoration: none;
+  color: #0066cc;
+}
+a:visited {
+  color: #663399;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0099ff;
+}
+a:active {
+  color: #ff0000;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+th {
+  text-align: left;
+  font-weight: bold;
+  font-variant: small-caps;
+  background-color: #eef;
+  color: #333;
+}
+td {
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Form */
+.form-label {
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #333;
+}
+.form-control {
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  width: 20rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  main, aside {
+    float: none;
+    width: 100%;
+  }
+  body {
+    padding: 1rem;
+  }
 }
